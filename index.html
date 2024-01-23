@@ -45,6 +45,8 @@
             margin-bottom: 40px;
         }
 
+
+
         .main-hero h2 {
             font-size: 60px;
         }
@@ -135,11 +137,26 @@
         }
 
         .language-chip.golang {
-            background-color: #ff6b6b;
+            background-color: #51cfdd;
         }
 
         .language-chip.rust {
-            background-color: #ffb677;
+            background-color: #ff6b6b;
+        }
+
+        @media (max-width: 767px) {
+            .main-hero {
+                flex-direction: column;
+            }
+
+            .main-hero .hero-section {
+                margin-bottom: 40px;
+            }
+
+            .skill-card {
+                width: 100%;
+                height: 50px;
+            }
         }
     </style>
 </head>
@@ -152,7 +169,7 @@
         </header>
 
         <section class="main-hero">
-            <div>
+            <div class="hero-section">
                 <h2>Full-Stack Polyglot Developer</h2>
                 <div>
                     <p>
@@ -163,28 +180,28 @@
                 <a href="lukas-deconantsesznak-resume.pdf" class="resume-download" target="_download">Download
                     Resume</a>
             </div>
-            <div>
+            <div class="hero-section">
                 <img src="portfolio-site-image.png" />
             </div>
         </section>
 
         <section class="skills">
-            <div class="skill-card" style="background-color: #ff6b6b;">
-                <h3>Golang</h3>
+            <div class="skill-card" style="background-color: #51cfdd;">
+                <h3>Go</h3>
             </div>
-            <div class="skill-card" style="background-color: #ffb677;">
+            <div class="skill-card" style="background-color: #ff6b6b;">
                 <h3>Rust</h3>
             </div>
-            <div class="skill-card" style="background-color: #ffda6b;">
+            <div class="skill-card" style="background-color: #2163a5;">
                 <h3>TypeScript</h3>
             </div>
-            <div class="skill-card" style="background-color: #b6ff6b;">
+            <div class="skill-card" style="background-color: #984c93;">
                 <h3>C#</h3>
             </div>
-            <div class="skill-card" style="background-color: #6bff9c;">
+            <div class="skill-card" style="background-color: #07d6f7;">
                 <h3>React</h3>
             </div>
-            <div class="skill-card" style="background-color: #6befff;">
+            <div class="skill-card" style="background-color: #2a2c39;">
                 <h3>Next.js</h3>
             </div>
         </section>
@@ -206,7 +223,7 @@
             <div class="repo-card">
                 <h3>slicefuncs</h3>
                 <p>Functional programming utility functions for slices using generics.</p>
-                <div class="language-chip golang">Golang</div>
+                <div class="language-chip golang">Go</div>
                 <a href="https://github.com/LukasDeco/slicefuncs" target="_blank">View on GitHub</a>
             </div>
             <div class="repo-card">
@@ -218,13 +235,13 @@
             <div class="repo-card">
                 <h3>lego</h3>
                 <p>Let's Encrypt/ACME client and library written in Go</p>
-                <div class="language-chip golang">Golang</div>
+                <div class="language-chip golang">Go</div>
                 <a href="https://github.com/LukasDeco/lego" target="_blank">View on GitHub</a>
             </div>
             <div class="repo-card">
                 <h3>github-portfolio-generator</h3>
                 <p>Generate a github portfolio website with magic</p>
-                <div class="language-chip golang">Golang</div>
+                <div class="language-chip golang">Go</div>
                 <a href="https://github.com/LukasDeco/github-portfolio-generator" target="_blank">View on GitHub</a>
             </div>
         </section>

@@ -7,7 +7,7 @@
     <title>LukasDeco - Full-Stack Polyglot Developer</title>
     <style>
         body {
-            background: linear-gradient(to bottom, #000046, #1cb5e0);
+            background: #0e0e12;
             color: #fff;
             font-family: Arial, sans-serif;
             margin: 0;
@@ -25,6 +25,7 @@
             align-items: center;
             justify-content: space-between;
             margin-bottom: 40px;
+            color: #6befff;
         }
 
         .header h1 {
@@ -37,6 +38,25 @@
             height: 100px;
         }
 
+        .main-hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .main-hero h2 {
+            font-size: 60px;
+        }
+
+        .main-hero p {
+            color: #6befff;
+        }
+
+        .main-hero img {
+            width: 100%;
+        }
+
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -45,8 +65,8 @@
         }
 
         .skill-card {
-            width: 200px;
-            height: 200px;
+            width: 190px;
+            height: 100px;
             margin: 10px;
             padding: 20px;
             border-radius: 10px;
@@ -72,18 +92,44 @@
             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
         }
 
+        .repo-card a,
+        a:visited {
+            color: rgb(218, 214, 199);
+        }
+
         .social-media {
             display: flex;
             justify-content: center;
+            color: white;
         }
 
         .social-media a {
             margin: 0 10px;
         }
 
+        .social-media svg {
+            fill: white;
+        }
+
         .social-media img {
             width: 30px;
             height: 30px;
+        }
+
+        .language-chip {
+            color: #fff;
+            padding: 6px 10px;
+            border-radius: 3px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+
+        .language-chip.golang {
+            background-color: #ff6b6b;
+        }
+
+        .language-chip.rust {
+            background-color: #ffb677;
         }
     </style>
 </head>
@@ -91,14 +137,25 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1>LukasDeco</h1>
-            <h2>Full-Stack Polyglot Developer</h2>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="100px" height="100px">
-                <path d="M0 0h24v24H0z" fill="none" />
-                <path
-                    d="M12 2C6.48 2 2 6.48 2 12c0 4.41 3.589 8 8 8s8-3.59 8-8c0-5.52-4.48-10-10-10zm0 18c-3.31 0-6-2.69-6-6 0-3.31 2.69-6 6-6 3.31 0 6 2.69 6 6 0 3.31-2.69 6-6 6zm1-12h-2v6h2v-6zm0 8h-2v2h2v-2z" />
-            </svg>
+            <h3>Lukas deConantsesznak</h3>
+
         </header>
+
+        <section class="main-hero">
+            <div>
+                <h2>Full-Stack Polyglot Developer</h2>
+                <div>
+                    <p>
+                        Seasoned full-stack software engineer who has worked across a wide range of
+                        tech stacks and programming languages.
+                    </p>
+                </div>
+                <a href="lukas-deconantsesznak-resume.pdf" target="_download">Resume</a>
+            </div>
+            <div>
+                <img src="portfolio-site-image.png" />
+            </div>
+        </section>
 
         <section class="skills">
             <div class="skill-card" style="background-color: #ff6b6b;">
@@ -122,44 +179,68 @@
         </section>
 
         <section class="github-repos">
+            <h2>About Me</h2>
+            <div>
+
+            </div>
+        </section>
+
+        <section class="github-repos">
             <h2>Github Repositories</h2>
             <div class="repo-card">
-                <h3>github-portfolio-generator</h3>
-                <p>Generate a github portfolio website with magic</p>
-                <a href="https://github.com/LukasDeco/github-portfolio-generator" target="_blank">View on GitHub</a>
-            </div>
-            <div class="repo-card">
-                <h3>lego</h3>
-                <p>Let's Encrypt/ACME client and library written in Go</p>
-                <a href="https://github.com/LukasDeco/lego" target="_blank">View on GitHub</a>
+                <h3>twilio-rust</h3>
+                <p>Auto-generated OpenAPI rust-based Twilio client</p>
+                <div class="language-chip rust">Rust</div>
+                <a href="https://github.com/LukasDeco/twilio-rust" target="_blank">View on GitHub</a>
             </div>
             <div class="repo-card">
                 <h3>lzw-compress</h3>
                 <p>Lempel-Ziv-Welch Compression Algorithm written in Rust</p>
+                <div class="language-chip rust">Rust</div>
                 <a href="https://github.com/LukasDeco/lzw-compress" target="_blank">View on GitHub</a>
             </div>
             <div class="repo-card">
                 <h3>slicefuncs</h3>
-                <p></p>
+                <p>Functional programming utility functions for slices using generics.</p>
+                <div class="language-chip golang">Golang</div>
                 <a href="https://github.com/LukasDeco/slicefuncs" target="_blank">View on GitHub</a>
             </div>
             <div class="repo-card">
                 <h3>token-buddy</h3>
                 <p>Rust library or generating cryptographic tokens for authentication and other uses.</p>
+                <div class="language-chip rust">Rust</div>
                 <a href="https://github.com/LukasDeco/token-buddy" target="_blank">View on GitHub</a>
             </div>
             <div class="repo-card">
-                <h3>twilio-rust</h3>
-                <p>Auto-generated OpenAPI rust-based Twilio client</p>
-                <a href="https://github.com/LukasDeco/twilio-rust" target="_blank">View on GitHub</a>
+                <h3>lego</h3>
+                <p>Let's Encrypt/ACME client and library written in Go</p>
+                <div class="language-chip golang">Golang</div>
+                <a href="https://github.com/LukasDeco/lego" target="_blank">View on GitHub</a>
+            </div>
+            <div class="repo-card">
+                <h3>github-portfolio-generator</h3>
+                <p>Generate a github portfolio website with magic</p>
+                <div class="language-chip golang">Golang</div>
+                <a href="https://github.com/LukasDeco/github-portfolio-generator" target="_blank">View on GitHub</a>
             </div>
         </section>
 
         <section class="social-media">
-            <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
-            <a href="https://github.com/" target="_blank"><img src="github.png" alt="GitHub"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="YouTube"></a>
-            <a href="https://www.example.com/" target="_blank"><img src="x.png" alt="X"></a>
+            <a href="https://www.linkedin.com/in/lukasdeconantsesznak/" target="_blank"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+                    <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z" />
+                </svg></a>
+            <a href="https://github.com/LukasDeco" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2.218 18.616c-.354.069-.468-.149-.468-.336v-1.921c0-.653-.229-1.079-.481-1.296 1.56-.173 3.198-.765 3.198-3.454 0-.765-.273-1.389-.721-1.879.072-.177.312-.889-.069-1.853 0 0-.587-.188-1.923.717-.561-.154-1.159-.231-1.754-.234-.595.003-1.193.08-1.753.235-1.337-.905-1.925-.717-1.925-.717-.379.964-.14 1.676-.067 1.852-.448.49-.722 1.114-.722 1.879 0 2.682 1.634 3.282 3.189 3.459-.2.175-.381.483-.444.936-.4.179-1.413.488-2.037-.582 0 0-.37-.672-1.073-.722 0 0-.683-.009-.048.426 0 0 .46.215.777 1.024 0 0 .405 1.25 2.353.826v1.303c0 .185-.113.402-.462.337-2.782-.925-4.788-3.549-4.788-6.641 0-3.867 3.135-7 7-7s7 3.133 7 7c0 3.091-2.003 5.715-4.782 6.641z" />
+                </svg></a>
+            <a href="https://www.youtube.com/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M10.918 13.933h.706v3.795h-.706v-.419c-.13.154-.266.272-.405.353-.381.218-.902.213-.902-.557v-3.172h.705v2.909c0 .153.037.256.188.256.138 0 .329-.176.415-.284v-2.881zm.642-4.181c.2 0 .311-.16.311-.377v-1.854c0-.223-.098-.38-.324-.38-.208 0-.309.161-.309.38v1.854c-.001.21.117.377.322.377zm-1.941 2.831h-2.439v.747h.823v4.398h.795v-4.398h.821v-.747zm4.721 2.253v2.105c0 .47-.176.834-.645.834-.259 0-.474-.094-.671-.34v.292h-.712v-5.145h.712v1.656c.16-.194.375-.354.628-.354.517.001.688.437.688.952zm-.727.043c0-.128-.024-.225-.075-.292-.086-.113-.244-.125-.367-.062l-.146.116v2.365l.167.134c.115.058.283.062.361-.039.04-.054.061-.141.061-.262v-1.96zm10.387-2.879c0 6.627-5.373 12-12 12s-12-5.373-12-12 5.373-12 12-12 12 5.373 12 12zm-10.746-2.251c0 .394.12.712.519.712.224 0 .534-.117.855-.498v.44h.741v-3.986h-.741v3.025c-.09.113-.291.299-.436.299-.159 0-.197-.108-.197-.269v-3.055h-.741v3.332zm-2.779-2.294v1.954c0 .703.367 1.068 1.085 1.068.597 0 1.065-.399 1.065-1.068v-1.954c0-.624-.465-1.071-1.065-1.071-.652 0-1.085.432-1.085 1.071zm-2.761-2.455l.993 3.211v2.191h.835v-2.191l.971-3.211h-.848l-.535 2.16-.575-2.16h-.841zm10.119 10.208c-.013-2.605-.204-3.602-1.848-3.714-1.518-.104-6.455-.103-7.971 0-1.642.112-1.835 1.104-1.848 3.714.013 2.606.204 3.602 1.848 3.715 1.516.103 6.453.103 7.971 0 1.643-.113 1.835-1.104 1.848-3.715zm-.885-.255v.966h-1.35v.716c0 .285.024.531.308.531.298 0 .315-.2.315-.531v-.264h.727v.285c0 .731-.313 1.174-1.057 1.174-.676 0-1.019-.491-1.019-1.174v-1.704c0-.659.435-1.116 1.071-1.116.678.001 1.005.431 1.005 1.117zm-.726-.007c0-.256-.054-.445-.309-.445-.261 0-.314.184-.314.445v.385h.623v-.385z" />
+                </svg></a>
         </section>
     </div>
 </body>

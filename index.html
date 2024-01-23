@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LukasDeco - Full-Stack Polyglot Developer</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #000046, #1cb5e0);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        .header svg {
+            width: 100px;
+            height: 100px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .skill-card {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            transition: box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .skill-card:hover {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .github-repos {
+            margin-bottom: 40px;
+        }
+
+        .repo-card {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+        }
+
+        .social-media img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>LukasDeco</h1>
+            <h2>Full-Stack Polyglot Developer</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff" width="100px" height="100px">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path
+                    d="M12 2C6.48 2 2 6.48 2 12c0 4.41 3.589 8 8 8s8-3.59 8-8c0-5.52-4.48-10-10-10zm0 18c-3.31 0-6-2.69-6-6 0-3.31 2.69-6 6-6 3.31 0 6 2.69 6 6 0 3.31-2.69 6-6 6zm1-12h-2v6h2v-6zm0 8h-2v2h2v-2z" />
+            </svg>
+        </header>
+
+        <section class="skills">
+            <div class="skill-card" style="background-color: #ff6b6b;">
+                <h3>Golang</h3>
+            </div>
+            <div class="skill-card" style="background-color: #ffb677;">
+                <h3>Rust</h3>
+            </div>
+            <div class="skill-card" style="background-color: #ffda6b;">
+                <h3>TypeScript</h3>
+            </div>
+            <div class="skill-card" style="background-color: #b6ff6b;">
+                <h3>C#</h3>
+            </div>
+            <div class="skill-card" style="background-color: #6bff9c;">
+                <h3>React</h3>
+            </div>
+            <div class="skill-card" style="background-color: #6befff;">
+                <h3>Next.js</h3>
+            </div>
+        </section>
+
+        <section class="github-repos">
+            <h2>Github Repositories</h2>
+            <div class="repo-card">
+                <h3>github-portfolio-generator</h3>
+                <p>Generate a github portfolio website with magic</p>
+                <a href="https://github.com/LukasDeco/github-portfolio-generator" target="_blank">View on GitHub</a>
+            </div>
+            <div class="repo-card">
+                <h3>lego</h3>
+                <p>Let's Encrypt/ACME client and library written in Go</p>
+                <a href="https://github.com/LukasDeco/lego" target="_blank">View on GitHub</a>
+            </div>
+            <div class="repo-card">
+                <h3>lzw-compress</h3>
+                <p>Lempel-Ziv-Welch Compression Algorithm written in Rust</p>
+                <a href="https://github.com/LukasDeco/lzw-compress" target="_blank">View on GitHub</a>
+            </div>
+            <div class="repo-card">
+                <h3>slicefuncs</h3>
+                <p></p>
+                <a href="https://github.com/LukasDeco/slicefuncs" target="_blank">View on GitHub</a>
+            </div>
+            <div class="repo-card">
+                <h3>token-buddy</h3>
+                <p>Rust library or generating cryptographic tokens for authentication and other uses.</p>
+                <a href="https://github.com/LukasDeco/token-buddy" target="_blank">View on GitHub</a>
+            </div>
+            <div class="repo-card">
+                <h3>twilio-rust</h3>
+                <p>Auto-generated OpenAPI rust-based Twilio client</p>
+                <a href="https://github.com/LukasDeco/twilio-rust" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+
+        <section class="social-media">
+            <a href="https://www.linkedin.com/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/" target="_blank"><img src="github.png" alt="GitHub"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="youtube.png" alt="YouTube"></a>
+            <a href="https://www.example.com/" target="_blank"><img src="x.png" alt="X"></a>
+        </section>
+    </div>
+</body>
+
+</html>
